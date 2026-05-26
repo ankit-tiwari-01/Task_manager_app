@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:sync": "node -e \"require('./models/taskModel'); require('./config/db').sync({ alter: true }).then(() => { console.log('Database synced successfully'); process.exit(0); }).catch((err) => { console.error(err); process.exit(1); })\""
   },
   "keywords": [],
   "author": "",
