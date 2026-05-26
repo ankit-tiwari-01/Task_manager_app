@@ -11,7 +11,8 @@ async function startServer() {
     console.log('Database connection has been established successfully.');
 
     // Sync Database Models
-    await sequelize.sync({ alter: true });
+    const alterDb = process.env.NODE_ENV === 'development';
+    await sequelize.sync({ alter: alterDb });
     console.log('Database models synchronized.');
 
     // Start Express Server
