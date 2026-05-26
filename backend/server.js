@@ -10,6 +10,10 @@ async function startServer() {
     await sequelize.authenticate();
     console.log('Database connection has been established successfully.');
 
+    // Sync Database Models
+    await sequelize.sync();
+    console.log('Database models synchronized.');
+
     // Start Express Server
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
