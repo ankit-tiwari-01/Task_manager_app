@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TaskFlow - Premium Task Manager Application
 
 TaskFlow is a state-of-the-art, full-stack Task Management Kanban workspace built on a modern, high-fidelity React frontend and a robust Node.js/Express backend, backed by MySQL database persistence using Sequelize.
@@ -77,3 +78,6 @@ JWT_EXPIRES_IN=24h
    npm run dev
    ```
    *Open your browser and explore the app at http://localhost:5173/.*
+=======
+# Task_manager_app
+>>>>>>> 701c031f67c5af1d4b093896c84d42b5b7a432a4
